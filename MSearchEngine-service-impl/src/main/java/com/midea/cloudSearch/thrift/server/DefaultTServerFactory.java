@@ -1,9 +1,6 @@
 package com.midea.cloudSearch.thrift.server;
 import java.util.Map;
 import java.util.concurrent.Executors;
-
-import javax.management.RuntimeErrorException;
-
 import org.apache.thrift.TMultiplexedProcessor;
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TCompactProtocol;
