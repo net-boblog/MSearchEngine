@@ -16,8 +16,7 @@ public class BlackServiceStub implements BlackService.Iface{
 	private final BlackService.Client client ;
 	
 	public BlackServiceStub(String host,int port) throws IOException, TTransportException{
-		TFramedTransport transport = new TFramedTransport(new TSocket(host,
-				port));
+		TFramedTransport transport = new TFramedTransport(new TSocket(host,port));
 		transport.open();
         client = new BlackService.Client(new TMultiplexedProtocol(new TCompactProtocol(transport), "blackService"));
 	}
