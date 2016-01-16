@@ -16,13 +16,6 @@
 	</modules>
 	
 	<properties>
-		<trade-erp-version>0.0.1-SNAPSHOT</trade-erp-version>
-		<trade-erp-impl-version>0.0.1-SNAPSHOT</trade-erp-impl-version>
-		<trade-erp-api-version>0.0.1-SNAPSHOT</trade-erp-api-version>
-		<trade-erp-server-version>0.0.1-SNAPSHOT</trade-erp-server-version>
-		<trade-erp-model-version>0.0.1-SNAPSHOT</trade-erp-model-version>
-		<trade-erp-core-version>0.0.1-SNAPSHOT</trade-erp-core-version>
-		<trade-erp-common-version>0.0.1-SNAPSHOT</trade-erp-common-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<midea.common.version>0.0.1</midea.common.version>
 		<spring.version>3.2.5.RELEASE</spring.version>
@@ -33,8 +26,7 @@
 		<mockito.core.version>1.9.5</mockito.core.version>
 		<lombok.version>1.14.4</lombok.version>
 		<mvn-plugin-jar-version>2.4</mvn-plugin-jar-version>
-		<trade-integration-api-version>0.0.1-SNAPSHOT</trade-integration-api-version>
-		<trade-manage-api-version>0.0.1-SNAPSHOT</trade-manage-api-version>
+		<MSearchEngine.version>0.0.1-SNAPSHOT</MSearchEngine.version>
 	</properties>
 
 	<dependencyManagement>
@@ -219,24 +211,6 @@
 				<artifactId>trade-common</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
-
-			<!-- 数据权限服务 -->
-			<dependency>
-				<groupId>com.midea.trade.dmz</groupId>
-				<artifactId>trade-dmz-api</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>com.midea.trade.permission</groupId>
-				<artifactId>trade-permission-api</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.taobao.ad</groupId>
-				<artifactId>es-client</artifactId>
-				<version>1.0.3</version>
-			</dependency>
 			<!-- 用于xml解析 -->
 			<dependency>
 				<groupId>commons-digester</groupId>
@@ -291,26 +265,9 @@
 				<version>2.3.5.Final</version>
 			</dependency>
 			<dependency>
-				<groupId>com.midea.tc</groupId>
-				<artifactId>icagent</artifactId>
-				<version>1.0-SNAPSHOT</version>
-			</dependency>
-			<dependency>
 				<groupId>net.sf.opencsv</groupId>
 				<artifactId>opencsv</artifactId>
 				<version>2.3</version>
-			</dependency>
-			<!-- comm100的邮件服务 -->
-			<dependency>
-				<groupId>comm100</groupId>
-				<artifactId>comm100Api-java-sdk</artifactId>
-				<version>1.0</version>
-			</dependency>
-			<!-- 引入lombok -->
-			<dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>maven-lombok-plugin</artifactId>
-				<version>0.9.3.1</version>
 			</dependency>
 			<!-- MMQ服务 -->
 			<dependency>
@@ -324,14 +281,6 @@
 				<artifactId>jedis</artifactId>
 				<version>2.4.1</version>
 			</dependency>
-
-			<!-- quartz -->
-			<dependency>
-				<groupId>org.quartz-scheduler</groupId>
-				<artifactId>quartz</artifactId>
-				<version>2.2.1</version>
-			</dependency>
-
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
@@ -348,11 +297,6 @@
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.midea.trade.integration</groupId>
-				<artifactId>trade-integration-api</artifactId>
-				<version>${trade-integration-api-version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.sourceforge.jexcelapi</groupId>
@@ -377,24 +321,6 @@
 				<artifactId>MConfigCenter</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
-			<!-- 汪海霖core api -->
-			<dependency>
-				<groupId>com.midea.trade.core</groupId>
-				<artifactId>trade-core-api</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-			<!-- 读写分离组件 -->
-			<dependency>
-				<groupId>com.midea.trade.rws</groupId>
-				<artifactId>trade-rws</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-			<!-- 运营平台 -->
-			<dependency>
-				<groupId>com.midea.trade.manage</groupId>
-				<artifactId>trade-manage-api</artifactId>
-				<version>${trade-manage-api-version}</version>
-			</dependency>
 			<!--excel poi的依赖 -->
 			<dependency>
 				<groupId>org.apache.poi</groupId>
@@ -416,12 +342,6 @@
 				<artifactId>ehcache-core</artifactId>
 				<version>2.6.11</version>
 			</dependency>
-			<!-- dataexporter excel导出用 -->
-			<dependency>
-				<groupId>com.midea.dataexporter</groupId>
-				<artifactId>dataexporter-api</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
 			 <!-- 引入Dubbo -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -434,12 +354,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            <!-- 引入mongodb -->
-            <dependency>
-    			<groupId>org.mongodb</groupId>
-    			<artifactId>mongo-java-driver</artifactId>
-   				<version>3.0.3</version>
-			</dependency>
 			<dependency>
 				<groupId>commons-logging</groupId>
 				<artifactId>commons-logging</artifactId>
@@ -470,12 +384,6 @@
 				<artifactId>maven-lombok-plugin</artifactId>
 				<version>0.9.3.1</version>
 			</dependency>
-			<!-- (陈立彬)物流API -->
-			<dependency>
-    			<groupId>com.midea.trade.integration</groupId>
-    			<artifactId>trade-integration-api</artifactId>
-    			<version>0.0.1-SNAPSHOT</version>
-			</dependency>
 			<!--用于基于elasticsearch的搜索 -->
 			<dependency>
           	 	<groupId>org.elasticsearch</groupId>
@@ -487,6 +395,11 @@
 		         <artifactId>elasticsearch-shield</artifactId>
 		         <version>1.3.3</version>
      		</dependency>
+     		<dependency>
+				<groupId>com.midea.searchEngine</groupId>
+				<artifactId>MSearchEngine-common</artifactId>
+				<version>${MSearchEngine.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
