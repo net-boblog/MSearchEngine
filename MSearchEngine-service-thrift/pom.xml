@@ -118,10 +118,16 @@
 			<version>2.1</version>
 		</dependency>
 		<dependency>
-			  <groupId>org.apache.thrift</groupId>
-			  <artifactId>libthrift</artifactId>
-			  <version>0.9.1</version>
-			</dependency>
+		  <groupId>org.apache.thrift</groupId>
+		  <artifactId>libthrift</artifactId>
+		  <version>0.9.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.midea.searchEngine</groupId>
+			<artifactId>MSearchEngine-common</artifactId>
+			<version>${MSearchEngine.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
