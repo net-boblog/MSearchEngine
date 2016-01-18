@@ -105,6 +105,12 @@
 		  <groupId>org.projectlombok</groupId>
 		  <artifactId>maven-lombok-plugin</artifactId>
 		</dependency>
+  		<!--elasticsearch  -->
+		<dependency>
+		  <groupId>org.elasticsearch</groupId>
+		  <artifactId>elasticsearch</artifactId>
+		  <version>1.7.1</version>
+		</dependency>		
 	</dependencies>
 
 	<build>
